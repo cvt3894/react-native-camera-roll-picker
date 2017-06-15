@@ -119,10 +119,6 @@ class CameraRollPicker extends Component {
     )
   }
 
-  renderSelectedMaker (item) {
-    this.props.selectedMarker && this.props.selectedMarker(item)
-  }
-
   _renderImage (item) {
     var {selected} = this.state
     var {
@@ -140,7 +136,7 @@ class CameraRollPicker extends Component {
         item={item}
         selected={isSelected}
         imageMargin={imageMargin}
-        selectedMarker={this.renderSelectedMaker(item)}
+        selectedMarker={this.props.selectedMarker ? () => this.props.selectedMarker(item) : null}
         imagesPerRow={imagesPerRow}
         containerWidth={containerWidth}
         onClick={this._selectImage.bind(this)}

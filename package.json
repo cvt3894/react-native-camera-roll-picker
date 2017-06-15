@@ -1,15 +1,69 @@
 {
-  "name": "react-native-camera-roll-picker",
-  "version": "1.1.9",
+  "_args": [
+    [
+      {
+        "raw": "react-native-camera-roll-picker@git+https://github.com/cvt3894/react-native-camera-roll-picker.git",
+        "scope": null,
+        "escapedName": "react-native-camera-roll-picker",
+        "name": "react-native-camera-roll-picker",
+        "rawSpec": "git+https://github.com/cvt3894/react-native-camera-roll-picker.git",
+        "spec": "git+https://github.com/cvt3894/react-native-camera-roll-picker.git",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:cvt3894/react-native-camera-roll-picker.git",
+          "sshUrl": "git+ssh://git@github.com/cvt3894/react-native-camera-roll-picker.git",
+          "httpsUrl": "git+https://github.com/cvt3894/react-native-camera-roll-picker.git",
+          "gitUrl": "git://github.com/cvt3894/react-native-camera-roll-picker.git",
+          "shortcut": "github:cvt3894/react-native-camera-roll-picker",
+          "directUrl": "https://raw.githubusercontent.com/cvt3894/react-native-camera-roll-picker/master/package.json"
+        }
+      },
+      "C:\\react\\united-druze-aid"
+    ]
+  ],
+  "_from": "git+https://github.com/cvt3894/react-native-camera-roll-picker.git",
+  "_id": "react-native-camera-roll-picker@1.1.9",
+  "_inCache": true,
+  "_location": "/react-native-camera-roll-picker",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "react-native-camera-roll-picker@git+https://github.com/cvt3894/react-native-camera-roll-picker.git",
+    "scope": null,
+    "escapedName": "react-native-camera-roll-picker",
+    "name": "react-native-camera-roll-picker",
+    "rawSpec": "git+https://github.com/cvt3894/react-native-camera-roll-picker.git",
+    "spec": "git+https://github.com/cvt3894/react-native-camera-roll-picker.git",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:cvt3894/react-native-camera-roll-picker.git",
+      "sshUrl": "git+ssh://git@github.com/cvt3894/react-native-camera-roll-picker.git",
+      "httpsUrl": "git+https://github.com/cvt3894/react-native-camera-roll-picker.git",
+      "gitUrl": "git://github.com/cvt3894/react-native-camera-roll-picker.git",
+      "shortcut": "github:cvt3894/react-native-camera-roll-picker",
+      "directUrl": "https://raw.githubusercontent.com/cvt3894/react-native-camera-roll-picker/master/package.json"
+    }
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+https://github.com/cvt3894/react-native-camera-roll-picker.git#910c2573ad5e10733c6754309f26dd5151bd00ce",
+  "_shasum": "841dcf34f8cb4bca5676cfd72299adb40e774a18",
+  "_shrinkwrap": null,
+  "_spec": "react-native-camera-roll-picker@git+https://github.com/cvt3894/react-native-camera-roll-picker.git",
+  "_where": "C:\\react\\united-druze-aid",
+  "author": {
+    "name": "jeanpan"
+  },
+  "bugs": {
+    "url": "https://github.com/jeanpan/react-native-camera-roll-picker/issues"
+  },
+  "dependencies": {},
   "description": "A React Native component providing images selection from camera roll ",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jeanpan/react-native-camera-roll-picker.git"
-  },
+  "devDependencies": {},
+  "gitHead": "910c2573ad5e10733c6754309f26dd5151bd00ce",
+  "homepage": "https://github.com/jeanpan/react-native-camera-roll-picker#readme",
   "keywords": [
     "react-native-component",
     "react-component",
@@ -18,10 +72,18 @@
     "cameraroll",
     "picker"
   ],
-  "author": "jeanpan",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jeanpan/react-native-camera-roll-picker/issues"
+  "main": "index.js",
+  "name": "react-native-camera-roll-picker",
+  "optionalDependencies": {},
+  "readme": "[![version](https://img.shields.io/npm/v/react-native-camera-roll-picker.svg)](https://www.npmjs.org/package/react-native-camera-roll-picker) [![npm](https://img.shields.io/npm/dt/react-native-camera-roll-picker.svg)](https://www.npmjs.org/package/react-native-camera-roll-picker)\r\n\r\n# react-native-camera-roll-picker\r\nCameraRoll Picker component for React native\r\n\r\n<a href=\"https://raw.githubusercontent.com/jeanpan/react-native-camera-roll-picker/master/demo/demo.gif\"><img src=\"https://raw.githubusercontent.com/jeanpan/react-native-camera-roll-picker/master/demo/demo.gif\" width=\"350\"></a>\r\n\r\n## Add to Project\r\n* Make sure node_modules/react-native/Libraries/CameraRoll/RCTCameraRoll.xcodeproj has been imported to project libraries by following the [libraries linking instructions](https://facebook.github.io/react-native/docs/linking-libraries-ios.html).\r\n\r\n* Install component through npm\r\n```\r\n$ npm install react-native-camera-roll-picker --save\r\n```\r\n\r\n* Require component\r\n```\r\nimport CameraRollPicker from 'react-native-camera-roll-picker';\r\n```\r\n\r\n## Basic Usage\r\n```js\r\n<CameraRollPicker\r\n  callback={this.getSelectedImages} />\r\n```\r\n\r\n## Props\r\n- `callback` : Callback function when images was selected. (is required!). Return a selected image array and current selected image.\r\n- `scrollRenderAheadDistance` : \"How early to start rendering rows before they come on screen, in pixels.\" (Default: 500)\r\n- `initialListSize` : Specifies how many rows we want to render on our first render pass. (Default: 1)\r\n- `pageSize` : After the initial render where 'initialListSize' is used, ListView looks at the pageSize to determine how many rows to render per frame. (Default: 3)\r\n- `removeClippedSubViews` : \"When true, offscreen child views (whose overflow value is hidden) are removed from their native backing superview when offscreen. This can improve scrolling performance on long lists. The default value is true.\" (The default value is false before version 0.14-rc). (Default: true)\r\n- `groupTypes` : The group where the photos will be fetched, one of 'Album', 'All', 'Event', 'Faces', 'Library', 'PhotoStream' and 'SavedPhotos'. (Default: SavedPhotos)\r\n- `assetType` : The asset type, one of 'Photos', 'Videos' or 'All'. (Default: Photos)\r\n- `selected` : Already be selected images array. (Default: [])\r\n- `maximum` : Maximum number of selected images. (Default: 15)\r\n- `imagesPerRow` : Number of images per row. (Default: 3)\r\n- `imageMargin` : Margin size of one image. (Default: 5)\r\n- `containerWidth` : Width of camer roll picker container. (Default: device width)\r\n- `selectedMarker` : Custom selected image marker component. (Default: checkmark).\r\n- `backgroundColor` : Set background color. (Default: white).\r\n- `emptyText`: Text to display instead of a list when there are no photos found. (Default: 'No photos.')\r\n- `emptyTextStyle`: Styles to apply to the `emptyText`. (Default: `textAlign: 'center'`)\r\n\r\n## Run Example\r\n```\r\n$ git clone https://github.com/jeanpan/react-native-camera-roll-picker.git\r\n$ cd react-native-camera-roll-picker\r\n$ cd Example\r\n$ npm install\r\n$ react-native run-ios\r\n```\r\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeanpan/react-native-camera-roll-picker.git"
   },
-  "homepage": "https://github.com/jeanpan/react-native-camera-roll-picker#readme"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.1.9"
 }

@@ -24,9 +24,7 @@ class ImageItem extends Component {
 
   renderSelectedMaker () {
     if (this.props.selectedMarker) {
-      return (
-        this.props.selectedMarker()
-      )
+      return this.props.selectedMarker()
     }
 
     return (
